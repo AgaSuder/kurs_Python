@@ -1,0 +1,21 @@
+Python 3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+t = (2, 4)
+KeyboardInterrupt
+print(t[2])
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    print(t[2])
+IndexError: tuple index out of range
+#tuple są numerowane od 0, więc element o indeksie 2 nie istnieje
+
+t.append(6)
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    t.append(6)
+AttributeError: 'tuple' object has no attribute 'append'
+#tuple nie wykorzystują medody "append", bo "Tuples are immutable heterogeneous sequences".
+
+a, b = t ; print(a, b)
+2 4
+# a zawiera element "2", a b zawiera element "4", i te elementy zostały wydrukowane funkcję "print"

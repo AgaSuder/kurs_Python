@@ -1,0 +1,9 @@
+# Explain the results.
+x = 5
+x == 5 and 3                  # 3      # x równe 5, więc zostało wypisane 3
+x == 4 and 3                  # False  # x nie jest równe 4, więc fałsz
+3 and x == 5                  # True   # sprawdzane jest tylko x, a x jest równe 5
+3 and x == 4                  # False  # sprawdzane jest tylko x, a x nie jest równe 5, więc fałsz
+
+isinstance(True, int)         # True   # prawda, bo True odpowiada wartości 1, czyli jest liczbą całkowitą
+isinstance(True, bool)        # True   # prawda, bo True jest wartościa bool
